@@ -22,5 +22,6 @@ module.exports = {
     'linebreak-style': ['error', 'unix'],
     'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    '@typescript-eslint/ban-ts-comment': 'off',
   },
 };
