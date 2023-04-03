@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "classnames": "^2.3.2",
+    "nativewind": "^2.0.11",
     "react": "18.2.0",
     "react-native": "0.71.5",
     "react-native-splash-screen": "^3.3.0"
@@ -24,8 +25,10 @@
     "@types/jest": "^29.2.1",
     "@types/react": "^18.0.24",
     "@types/react-test-renderer": "^18.0.0",
-    "babel-jest": "^29.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
     "babel-plugin-module-resolver": "^5.0.0",
+    "babel-jest": "^29.2.1",
     "eslint": "^8.36.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
