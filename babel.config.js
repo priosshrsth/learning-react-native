@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const tsconfig = require('./tsconfig.json');
 
 const pathAlias = tsconfig.compilerOptions.paths;
