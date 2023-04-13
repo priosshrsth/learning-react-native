@@ -2,6 +2,7 @@ import { Image, PermissionsAndroid, Pressable, ScrollView, StyleSheet, Text, Vie
 import Contacts, { type Contact } from 'react-native-contacts';
 import { useEffect, useState } from 'react';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import ContactCard from 'components/ContactCard';
 
 const getContacts = async (): Promise<Contact[]> => {
   const permission = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.READ_CONTACTS);
@@ -26,12 +27,7 @@ export default function ContactsScreen() {
       <ScrollView className={'flex-1'}>
         <View className={'container items-center justify-center flex-4 align-center flex flex-row flex-wrap pb-[66]'}>
           {contacts.map((contact) => (
-            <View key={contact.recordID} className={'flex-4 overflow-hidden p-1'}>
-              {!!contact.thumbnailPath && (
-                <Image className={'h-[120] w-[120]'} source={{ uri: contact.thumbnailPath }} />
-              )}
-              <Text>{contact.givenName}</Text>
-            </View>
+            <ContactCard contact={contact} key={contact.recordID} />
           ))}
         </View>
       </ScrollView>
